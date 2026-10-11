@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	_, r1Values, r2Values := gridGenerator()
-	grid := [][]int{r1Values, r2Values}
-	fmt.Println()
-	fmt.Println(gridGeneratorAnswer(grid))
+	n, k := boardGenerator()
+	fmt.Printf("%d %d\n", n, k)
+	fmt.Println(bishopPlacements(n, k))
 }
